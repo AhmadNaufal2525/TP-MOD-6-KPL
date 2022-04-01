@@ -5,10 +5,10 @@ import java.io.IOException;
 import org.json.simple.*;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-public class DataMahasiswa1302204085 {
+public class DataMahasiswa1302204057 {
     public static void ReadJSON() {
         try {
-            Object obj = new JSONParser().parse(new FileReader("F:\\Kuliah\\Kuliah\\Semester 4\\Konstruksi Perangkat Lunak\\praktikum_kpl\\MOD 6\\tpmodul6_kelompok_4\\src\\tp6_1_1302204085.json"));
+            Object obj = new JSONParser().parse(new FileReader("D:\\Kuliah\\Semester 4\\Konstruksi Perangkat Lunak\\TP\\TP-MOD-6-KPL\\src\\tp6_1_1302204057.json"));
             JSONObject jsonObject = (JSONObject) obj;
             System.out.println("Nama "+jsonObject.get("nama")+" dengan nim "+jsonObject.get("nim")+" dari fakultas "+jsonObject.get("fakultas"));
         } catch (FileNotFoundException FE) {
@@ -23,6 +23,6 @@ public class DataMahasiswa1302204085 {
         }
     }
     public static void main(String[] args) {
-        DataMahasiswa1302204085.ReadJSON();
+        DataMahasiswa1302204057.ReadJSON();
     }
 }
